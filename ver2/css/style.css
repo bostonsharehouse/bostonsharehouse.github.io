@@ -1432,7 +1432,7 @@ display: block !important;
 .timeline > li > .timeline-panel {
     width: 90%;
     float: left;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.2);
     position: relative;
     padding: 12px 40px;
     -webkit-border-radius: 5px;
