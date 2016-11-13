@@ -2,9 +2,6 @@
 <html>
 <head>
 <meta charset='utf-8' />
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/reset.css"> 
-<link rel="stylesheet" href="css/timeline.css">
 <link href='css/fullcalendar.css' rel='stylesheet' />
 <link href='css/fullcalendar.print.css' rel='stylesheet' media='print' />
 <script src='js/moment.min.js'></script>
@@ -67,6 +64,9 @@
 	}
 
 	#calendar {
+		object-align: flex-center;
+		width: 90%;
+		margin-left: 10%;
 		max-width: 900px;
 		margin: 0 auto;
 	}
@@ -78,6 +78,9 @@
 	<div id='loading'>loading...</div>
 
 	<div id='calendar'></div>
-
+	<div id="wrapper" style="text-align: center">    
+			<p>カレンダーをご確認の上、こちらよりご予約ください。</p>
+			<button><a href="gcal.html" target="__blank">予約はこちら</a></button>
+	</div>
 </body>
 </html>
