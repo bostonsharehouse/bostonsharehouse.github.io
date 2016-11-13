@@ -1,0 +1,560 @@
+/********************
+ Theme Name: AOIE Holdings
+ Theme URI:
+ Discription:
+ ********************/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, input, a, blockquote, pre, button,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+  list-style: none;
+  font-family: Avenir, Hiragino Sans !important;
+  text-decoration: none;
+  transition: 0.3s cubic-bezier(0.4, 0.4, 0, 1);
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  display: flex;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  color: rgba(0,0,0,0.8);
+  flex: none;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+
+html, body{
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+#modal__window {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+  background-color: rgba(67,67,67,0.68);
+}
+
+#wrap {
+  width: 100%;
+  height: 100%;
+}
+
+/********************
+ header style
+ ********************/
+header {
+  width: 100%;
+}
+
+.header__main {
+  width: 100%;
+  background: url(../img/IMG_5497_2.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.header__main:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  background-image: linear-gradient(-180deg, #000000 0%, #FFFFFF 100%);
+}
+
+.header__main__menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 90px;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+  background-color: rgba(255,255,255,1);
+}
+
+.header__main__menu-right {
+  /*margin-left: 5%;*/
+  width: 40%;
+  z-index: 9999;
+}
+
+.header__main__menu-right > ul {
+  width: 100%;
+  justify-content: space-around;
+}
+
+.header__main__menu-right > ul > li {
+
+}
+
+.header__main__menu-right > ul > li > a {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1.77px;
+  line-height: 22px;
+}
+
+.header__main__menu-left {
+  /*margin-right: 5%;*/
+  width: 40%;
+  z-index: 9999;
+}
+
+.header__main__menu-left > ul {
+  width: 100%;
+  justify-content: space-around;
+}
+
+.header__main__menu-left > ul > li {
+
+}
+
+.header__main__menu-left > ul > li > a {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1.77px;
+  line-height: 22px;
+}
+
+.header__main__menu-logo {
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__main__menu-logo > h1 {
+  height: 90px;
+  align-items: center;
+}
+
+.header__main__menu-logo > h1 > img {
+  height: 80px;
+}
+
+/********************
+ main style
+ ********************/
+main {
+  width: 100%;
+}
+
+#content__about > h2,
+#content__vision > h2,
+#blog > h2,
+#content__service > h2,
+#content__member > h2,
+#content__recruit > h2,
+#content__contact > h2 ,
+#cd-timeline > h2 {
+  width: 100%;
+  font-size: 29px;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 3.01px;
+  line-height: 40px;
+  font-weight: 500;
+  background-color: #FFFFFF;
+}
+
+.content__about__bg {
+  width: 100%;
+  height: 550px;
+  background: url(../img/harvard0.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  align-items: center;
+}
+
+.content__about__bg:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  background-image: linear-gradient(-180deg, #000000 0%, #FFFFFF 100%);
+
+}
+.content__about__bg > div {
+  width: 50%;
+  background-color: #FFFFFF;
+  position: relative;
+  left: 20px;
+  z-index: 1;
+  padding: 20px;
+  opacity: 0.8;  
+}
+
+.content__about__info {
+  width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1.75px;
+  line-height: 22px;
+  white-space: pre-line;
+}
+
+.blog {
+
+}
+
+.content__vision__bg {
+  width: 100%;
+  height: 550px;
+  background: url(../img/MIT.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.content__vision__bg > div {
+  width: 50%;
+  background-color: #FFFFFF;
+  position: relative;
+  right: 20px;
+  z-index: 1;
+  padding: 20px;
+  opacity: 0.8;
+}
+
+.content__vision__bg:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  background-image: linear-gradient(-180deg, #000000 0%, #FFFFFF 100%);
+
+}
+
+.content__vision__info {
+  width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1.75px;
+  line-height: 22px;
+  white-space: pre-line;
+}
+
+.content__vision__info > div {
+  width: 100%;
+  margin-bottom: 30px;
+  flex-direction: column;
+}
+
+.content__vision__info > div:last-child {
+  margin: 0;
+}
+
+.content__vision__info > div > h3 {
+  justify-content: center;
+  margin-bottom: 30px;
+  font-size: 19px;
+  font-weight: 500;
+}
+
+.content__vision__info > div > p {
+
+}
+
+.content__vision__info > div > p > strong{
+  font-weight: 500;
+}
+
+#content__member > ul {
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+
+#content__member > ul > li {
+  width: 20%;
+  height: 300px;
+  overflow: hidden;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+#content__member > ul > li > img {
+  height: 100%;
+  position: relative;
+}
+
+.modal__content {
+  display: none;
+  width: 700px;
+  height: 500px;
+  position: fixed;
+  z-index: 10001;
+  background-color: #FFFFFF;
+}
+
+.modal__content > button {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border-bottom: 1px solid #000000;
+  box-shadow: 0 0 1px 0 rgba(0,0,0,0.5);
+  justify-content: center;
+  align-content: center;
+  top: -25px;
+  right: -25px;
+  background-color: #FFFFFF;
+  position: absolute;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.modal__content > button > img {
+  width: 15px;
+  height: 15px;
+}
+
+.modal__content__name,
+.modal__contact__title {
+  width: 700px;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.5);
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 2.08px;
+  line-height: 20px;
+  position: fixed;
+}
+
+.modal__content__profile {
+  width: 100%;
+  overflow: auto;
+  padding: 20px;
+  position: relative;
+  margin-top: 60px;
+}
+
+.modal__content__profile__image {
+  width: 200px;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.modal__content__profile__image > img {
+  height: 265px;
+}
+
+.modal__content__profile__info {
+  width: 420px;
+  font-size: 13px;
+  letter-spacing: 1.35px;
+  line-height: 18px;
+  font-weight: 400;
+  white-space: pre-line;
+  margin-left: 30px;
+}
+
+.modal__contact__form {
+
+}
+
+.member-name {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.member-name > div {
+  color: #FFFFFF;
+  box-shadow: 0 0 0 1px rgba(255,255,255,1);
+  width: 120px;
+  height: 30px;
+  border-radius: 2px;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  letter-spacing: 1.25px;
+  line-height: 12px;
+  font-weight: 400;
+}
+
+.content__recruit__box {
+  width: 100%;
+  height: 450px;
+}
+
+.content__recruit__info {
+  width: 50%;
+  padding: 0 45px 0 20px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content__recruit__info > div {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1.45px;
+  line-height: 23px;
+  white-space: pre-line;
+}
+
+.content__recruit__info > button {
+  width: 200px;
+  height: 50px;
+  border-radius: 2px;
+  justify-content: center;
+  background-color: rgba(90,191,89,1);
+  margin-top: 50px;
+  transform: translate3d(0,0,0);
+  cursor: pointer;
+}
+
+.content__recruit__info > button > a {
+  color: #FFFFFF;
+  font-size: 14px;
+  letter-spacing: 1.45px;
+  line-height: 14px;
+}
+
+.content__recruit__info > button:hover {
+  filter: brightness(0.95);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2) inset;
+}
+
+.content__recruit__image {
+  width: 50%;
+  background: url(../img/section_bg03.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.content__contact__box {
+  width: 100%;
+}
+
+.content__contact__box-map {
+  width: 100%;
+}
+
+.content__contact__box-map > iframe {
+  width: 100%;
+}
+
+.content__contact__box__company {
+  margin: 50px auto;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content__contact__box__company > button {
+  width: 200px;
+  height: 50px;
+  border-radius: 2px;
+  color: #FFFFFF;
+  font-size: 14px;
+  letter-spacing: 1.45px;
+  line-height: 14px;
+  justify-content: center;
+  background-color: rgba(90,191,89,1);
+  transform: translate3d(0,0,0);
+  cursor: pointer;
+}
+
+.content__contact__box__company > button:hover {
+  filter: brightness(0.95);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2) inset;
+}
+
+.content__contact__box__company-title {
+  font-size: 18px;
+  letter-spacing: 1.87px;
+  font-weight: 500;
+  line-height: 18px;
+  justify-content: center;
+}
+
+.content__contact__box__company > table {
+  margin: 50px 0;
+  font-size: 14px;
+  letter-spacing: 1.45px;
+  line-height: 14px;
+  font-weight: 400;
+}
+
+.content__contact__box__company > table > tbody {
+  flex-direction: column;
+  align-content: center;
+}
+
+.content__contact__box__company > table > tbody > tr {
+  margin-bottom: 30px;
+  justify-content: center;
+}
+
+.content__contact__box__company > table > tbody > tr:last-child {
+  margin: 0;
+}
+
+.content__contact__box__company > table > tbody > tr > th {
+
+}
+
+.content__contact__box__company > table > tbody > tr > td {
+
+}
+
+/********************
+ footer style
+ ********************/
+footer {
+  width: 100%;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  font-size: 11px;
+  letter-spacing: 1.14px;
+  line-height: 11px;
+  color: #FFFFFF;
+  background-color: rgba(66,87,118,1);
+}
