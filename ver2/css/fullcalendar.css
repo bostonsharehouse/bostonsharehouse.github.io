@@ -16,7 +16,8 @@
   vertical-align:baseline;
   background:transparent;
   list-style: none;
-  font-family: Avenir, Hiragino Sans !important;
+  /*font-family: Avenir, Hiragino Sans !important;*/
+  font-family: 'Raleway', sans-serif;
   text-decoration: none;
   transition: 0.3s cubic-bezier(0.4, 0.4, 0, 1);
   -webkit-font-smoothing: antialiased;
@@ -885,6 +886,8 @@ a.fc-more:hover {
 
 .fc-toolbar h2 {
 	margin: 0;
+	font-size: 30px !important;
+	font-weight: 200;
 }
 
 /* button layering (for border precedence) */

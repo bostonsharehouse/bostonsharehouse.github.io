@@ -185,8 +185,8 @@ jQuery(function ($) {
         var map;
         map = new GMaps({
             el: '#map'
-            , lat: -12.043333
-            , lng: -77.028333
+            , lat: 42.366
+            , lng: -71.099
             , scrollwheel: false
         });
         map.drawOverlay({
