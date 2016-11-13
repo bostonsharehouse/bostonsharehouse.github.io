@@ -28,10 +28,10 @@ time, mark, audio, video {
   transition: 0.3s cubic-bezier(0.4, 0.4, 0, 1);
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
-  display: flex;
   letter-spacing: 0.1em;
   font-weight: 400;
   color: rgba(0,0,0,0.8);
+  display: flex;
   flex: none;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -424,7 +424,7 @@ main {
 
 .content__recruit__info {
   width: 50%;
-  padding: 0 45px 0 20px;
+  padding: 0 50px 0 50px;
   align-items: center;
   flex-direction: column;
   justify-content: center;
@@ -463,7 +463,7 @@ main {
 
 .content__recruit__image {
   width: 50%;
-  background: url(../img/section_bg03.png) no-repeat;
+  background: url(../img/accommodation.JPG) no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;

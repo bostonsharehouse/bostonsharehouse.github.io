@@ -4,11 +4,13 @@
 <meta charset="utf-8">
 <title></title>
 <link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
-<link rel="stylesheet" href="css/timeline.css"> <!-- Resource style -->
-<!-- <link href='http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700' rel='stylesheet' type='text/css'> -->
-
-<script src="js/modernizr.js"></script> <!-- Modernizr -->
+<link rel="stylesheet" href="css/timeline.css">
+<!-- <link href='css/fullcalendar.css' rel='stylesheet' /> -->
+<!-- <link href='css/fullcalendar.print.css' rel='stylesheet' media='print' /> -->
+<script src='js/moment.min.js'></script>
+<script src='js/jquery.min.js'></script>
+<!-- <script src='js/fullcalendar.js'></script> -->
+<!-- <script src='js/gcal.js'></script> -->
 
 <meta name="keywords" content="アオイエ, アオイエホールディングス, 北海道, 地方創生, スーパー表現者集団, 東京 シェアハウス">
 <meta name="description" content="アオイエホールディングスは、未来を創ります。スーパー表現者集団として、アーティスト、芸術家、作家、編集者、建築家、デザイナー、エンジニア、起業家らによるコラボレーションを生み出します。">
@@ -31,13 +33,13 @@
           <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#member">Member</a></li>
-            <li><a href="#blog">Blog</a></li>
+            <li><a href="#cd-timeline">History</a></li>
           </ul>
         </nav>
         <nav class="header__main__menu-left">
           <ul>
-            <li><a href="#recruit">History</a></li>
-            <li><a href="#recruit">Accommodation</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#accommodation">Accommodation</a></li>
             <li><a href="#contact">Location</a></li>
           </ul>
         </nav>
@@ -50,10 +52,9 @@
       <h2 id="about">About</h2>
       <div class="content__about__bg">
         <div>
-          <div class="content__about__info">
-            ハーバード、MIT, BU, Tuftsなど、世界の一流大学が集まっている都市、ケンブリッジ、ボストン。この街には、「海外へ留学したい、世界で学びたい」という人たちや、「とにかく世界一と呼ばれる場所にいって、いろんな人に会って刺激をうけたい」という方など、いろんな人が集まってきます。ただ残念ながら、旅行に来ただけではこの街には建物があるだけで、なかなか本来の街の良さを体験する事ができません。この街の良さは何か、それは一言で「そこにいる人々」です。ここにいる日本人は、日本から離れる一大決心をし、世界で勝負をする心構えをもった人たちです。<br>
-            僕（北川　拓也）はもう８年もケンブリッジに住んでいますが、今でもここにいる人とあうと、そのスケールの大きさに感動します。日本では会えない人たちがここにはいる。日本では体験できないことがここにはある。それを身にしみて知った僕は、是非日本の１０〜３０代の方々に、この素晴らしい土地と人を見に来てもらいたい、と思い、シェアハウスを設立致しました。<br>
-            ケンブリッジにいらっしゃった方々にこの場所にいる人と環境の素晴らしさが共感して頂くためには、同じ空気を吸ってもらうのが一番だと思いました。僕らが住んでいる場所に泊まってもらい、雰囲気を感じ取ってもらうためにこのシェアハウスを提供して行こうと思います。これからこの家が、ケンブリッジと日本をつなぐ場所として存在していけたら、と思います。</div>
+          <div class="content__about__info">ハーバード、MIT, BU, Tuftsなど、世界の一流大学が集まっている都市、ケンブリッジ、ボストン。この街には、「海外へ留学したい、世界で学びたい」という人たちや、「とにかく世界一と呼ばれる場所にいって、いろんな人に会って刺激をうけたい」という方など、いろんな人が集まってきます。ただ残念ながら、旅行に来ただけではこの街には建物があるだけで、なかなか本来の街の良さを体験する事ができません。この街の良さは何か、それは一言で「そこにいる人々」です。ここにいる日本人は、日本から離れる一大決心をし、世界で勝負をする心構えをもった人たちです。<br>
+ 
+          ボストンにいらっしゃった方々にこの場所にいる人と環境の素晴らしさが共感して頂くためには、同じ空気を吸ってもらうのが一番だと思いました。僕らが住んでいる場所に泊まってもらい、雰囲気を感じ取ってもらうためにこのシェアハウスを提供して行こうと思います。これからこの家が、ケンブリッジと日本をつなぐ場所として存在していけたら、と思います。</div>
         </div>
       </div>
     </section>
@@ -103,6 +104,18 @@
             <div>高島崚輔</div>
           </div>
         </li>
+        <li data-modal="modal__09">
+          <img src="img/member-09.jpg">
+          <div class="member-name">
+            <div>坂井すず</div>
+          </div>
+        </li>
+        <li data-modal="modal__08">
+          <img src="img/member-08.jpg">
+          <div class="member-name">
+            <div>楠正篤</div>
+          </div>
+        </li>
       </ul>
     <h2 id="history">History</h2>
     </section>
@@ -122,8 +135,8 @@
         </div> <!-- cd-timeline-block -->
 
         <div class="cd-timeline-block">
-          <div class="cd-timeline-img cd-movie">
-            <img src="img/timeline/cd-icon-location.svg" alt="Movie">
+          <div class="cd-timeline-img cd-location">
+            <img src="img/timeline/cd-icon-trophy.svg" alt="Movie">
           </div> <!-- cd-timeline-img -->
 
           <div class="cd-timeline-content">
@@ -136,25 +149,24 @@
 
         <div class="cd-timeline-block">
           <div class="cd-timeline-img cd-location">
-            <img src="img/timeline/cd-icon-location.svg" alt="Location">
+            <img src="img/timeline/cd-icon-trophy.svg" alt="Location">
           </div> <!-- cd-timeline-img -->
 
           <div class="cd-timeline-content">
-            <h2>シェアハウス休止</h2>
-            <p>ゲストの宿泊を休止。ボストンを訪れる日本人のHubとしての役割は継続。</p>
+            <p>ゲスト100人突破。</p>
             <span class="cd-date">2014年10月</span>
           </div> <!-- cd-timeline-content -->
         </div> <!-- cd-timeline-block -->
 
         <div class="cd-timeline-block">
-          <div class="cd-timeline-img cd-movie">
+          <div class="cd-timeline-img cd-picture">
             <img src="img/timeline/cd-icon-location.svg" alt="Location">
           </div> <!-- cd-timeline-img -->
 
           <div class="cd-timeline-content">
             <h2>シェアハウス第二章、開始</h2>
             <p>二回目の引越を終え、新住人も迎え、第二章としてシェアハウス企画は生まれ変わりました。</p>
-            <a href="#0" class="cd-read-more">Read more</a>
+            <!-- <a href="#0" class="cd-read-more">Read more</a> -->
             <span class="cd-date">2016年11月</span>
           </div> <!-- cd-timeline-content -->
         </div> <!-- cd-timeline-block -->
@@ -163,39 +175,30 @@
 
     <!-- Blog -->
     <section id="blog">
-      <h2 id="vision">Blog</h2>
+      <div id='calendar'></div>
+      <h2 id="vision">Blog (Coming Soon)</h2>
       <div class="content__vision__bg">
-        <div>
-          <div class="content__vision__info">
+        <!-- <div> -->
+          <!-- <div class="content__vision__info">
             <div>
+              
               <h3>Vision</h3>
               <p>「新しい普通を創る」 技術は発展し、多様性に富み、これ以上ないほど便利な世の中になりつつある。今を生きる人には何もかもが揃っている。しかし、人は「生きる」のに必要なものを見失いつつあるのかもしれない。お金＝幸せだと信じ、時間に追われて「生きる」ということがわからなくなる。 私たちは、世の中に「希望」を見出し、「夢」を持てる未来を目指すため、現代に合う「新しい普通」を見つけ出します。 </p>
             </div>
-            <div>
-              <h3>Mission</h3>
-              <p>「価値観＋価値観＝・・・？ 」
-「十人十色」というように、様々な人が生きる今。その土地に住む人、外から来た人、働く人、若者、一人一人にオリジナルの価値観があります。情報に溢れる現代、「想い」をどれだけ発信しても、他の情報に埋もれてしまう。私たちは、それぞれの価値観をストレートにぶつけ合える場を提供することで、各地の見本となるような、地方の新しい未来を描いてゆきます。 </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="content__service">
-      <h2 id="vision">Service</h2>
-      <div class="content__vision__bg">
-
+          </div> -->
+        <!-- </div> -->
       </div>
     </section>
 
     <section id="content__recruit">
-      <h2 id="recruit">Recruit</h2>
+      <h2 id="accommodation">Accommodation</h2>
       <div class="content__recruit__box">
         <div class="content__recruit__info">
-          <div>アオイエホールディングスでは新しい価値観の創造を目指して、
-メンバーと共に前進しています。
-多様な思想・文化・キャリアで化学反応を起こし、
-より新しいアイデアを生み続ける為、
-アオイエホールディングスでは新しいメンバーを募集しています。</div>
+          <div>ボストンシェアハウスに泊まりたい方は以下のフォームよりご応募ください。なるべく多くの方々にこのコミュニティを広げていきたいと思っていますので、ご質問がありましたら、お気軽にお問い合わせください！
+            <br>
+          - 部屋数には限りがあります。3人以上でご宿泊を希望される方は予めご相談ください。
+          - 予約／混雑状況により、お断りをさせていただく場合もあります。ご了承ください。
+          - ゲストには共益費、宿泊費として、少額のスポンサーをお願いしています。ご協力のほど、どうかよろしくお願いいたします。</div>
         <button><a href="" target="__blank">募集はこちら</a></button>
       </div>
     <div class="content__recruit__image"></div>
@@ -317,38 +320,24 @@ NHKなど多くのメディアに出演し、AERAでのキラッと光る「２�
 </div>
 <div class="modal__content modal__08">
   <button><img src="img/close_btn.svg"></button>
-  <div class="modal__content__name">橋本遥</div>
+  <div class="modal__content__name">楠正篤</div>
   <div class="modal__content__profile">
     <div class="modal__content__profile__image"><img src="img/member-08.jpg"></div>
-    <div class="modal__content__profile__info">南山大学短期大学部卒
-1994年12月17日 愛知県生まれ。
-青森食材の創作料理店Bois Vertにて修行中。
-たまごっちよりも芋虫を蝶々になるまで育てるのが好きだった。子供の頃は親にまで猿と言われた野生児。
-子供の頃におばあちゃんと採ってきて作ったよもぎ餅がおいしくて、今もずっと自然と関わりながら暮らしていきながら、命が命と思えるような場を作るのが夢。</div>
+    <div class="modal__content__profile__info">在籍：MIT Engineering Systems Division
+出身： イギリス・横浜市
+出身校：慶應義塾大学大学院システムデザインマネジメント研究科
+趣味： サッカー、ボクシング、モータースポーツ</div>
   </div>
 </div>
 <div class="modal__content modal__09">
   <button><img src="img/close_btn.svg"></button>
-  <div class="modal__content__name">星野大秀</div>
+  <div class="modal__content__name">坂井すず</div>
   <div class="modal__content__profile">
     <div class="modal__content__profile__image"><img src="img/member-09.jpg"></div>
-    <div class="modal__content__profile__info">1993年 7月9日千葉県生まれ。
-何かを作ることが好きなアニメオタク。
-映像/グラフィッククリエイターとして大学生活の3年間を過ごした。
-カメラ、レンズなどの機材やアニメグッズにお金をかけてしまうことが悩み。
-東京の人の多さと満員電車の不快さに嫌気がさしている。</div>
-  </div>
-</div>
-<div class="modal__content modal__10">
-  <button><img src="img/close_btn.svg"></button>
-  <div class="modal__content__name">内記朋冶</div>
-  <div class="modal__content__profile">
-    <div class="modal__content__profile__image"><img src="img/member-10.jpg"></div>
-    <div class="modal__content__profile__info">1994年12月6日 東京都練馬区生まれ。
-名字と出身地をこよなく愛する。
-東京経済大学経済学部経済学科在学中。
-興味の範囲が広く経験知稼ぎに励むがゆえに多趣味。
-現在は日本酒に強く惹かれ、学生日本酒協会副代表として学生に日本酒の魅力を伝えるべく活動中。また、旅をして自然と触れ合う中で狩猟採集に興味を持ち、自然との共生を目指している。</div>
+    <div class="modal__content__profile__info">在籍：舞台芸術家
+出身： 東京
+出身校：スミス大学
+趣味： 手芸、演劇鑑賞、テニス</div>
   </div>
 </div>
 <div class="modal__content modal__contact">
@@ -358,11 +347,13 @@ NHKなど多くのメディアに出演し、AERAでのキラッと光る「２�
 
   </div>
 </div>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
 <script src="js/ScrollMenu.js"></script>
 <script src="js/ModalUser.js"></script>
 <script src="js/Anchorlink.js"></script>
 <script src="js/main.js"></script>
+
+
 </body>
 </html>

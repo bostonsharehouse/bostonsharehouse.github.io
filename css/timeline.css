@@ -48,9 +48,8 @@ Main components
 
 -------------------------------- */
 #cd-timeline {
-
+  display: table !important;
 } 
-}
 
 #cd-timeline h2 {
   z-index: 2;
@@ -64,11 +63,15 @@ Main components
   opacity: 0.8;
 }
 
+#cd-timeline div {
+  /*display: block;*/
+}
+
 #cd-timeline {
   position: relative;
   padding: 2em 0;
   margin-top: 2em;
-  margin-bottom: 1em;
+  margin-bottom: 0em;
   color: #7f8c97;
   background-color: #e9f0f5;
   /*margin-left: 10%;*/
@@ -86,7 +89,7 @@ Main components
 @media only screen and (min-width: 1170px) {
   #cd-timeline {
     margin-top: 0em;
-    margin-bottom: 3em;
+    margin-bottom: 0em;
   }
   #cd-timeline::before {
     left: 50%;
@@ -97,6 +100,7 @@ Main components
 .cd-timeline-block {
   position: relative;
   margin: 2em 0;
+  /*display: block;*/
 }
 .cd-timeline-block:after {
   content: "";
@@ -318,8 +322,7 @@ Main components
     font-size: 16px;
     font-size: 1rem;
   }
-  /*.cd-timeline-block:nth-child(even) .cd-timeline-content {
-    float: right !important;
+/*  .cd-timeline-block:nth-child(even) .cd-timeline-content {
   }
   .cd-timeline-block:nth-child(even) .cd-timeline-content::before {
     top: 24px;
