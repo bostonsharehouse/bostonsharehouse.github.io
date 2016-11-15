@@ -16,7 +16,8 @@
   vertical-align:baseline;
   background:transparent;
   list-style: none;
-  font-family: Avenir, Hiragino Sans !important;
+  /*font-family: Avenir, Hiragino Sans !important;*/
+  font-family: 'Raleway', sans-serif;
   text-decoration: none;
   transition: 0.3s cubic-bezier(0.4, 0.4, 0, 1);
   -webkit-font-smoothing: antialiased;
@@ -31,7 +32,7 @@
   height: 50px;
   border-radius: 2px;
   justify-content: center;
-  background-color: rgba(90,191,89,1);
+  background-color: #008cba;
   transform: translate3d(0,0,0);
   cursor: pointer;
 }
@@ -564,13 +565,13 @@ temporary rendered events).
 	font-size: .85em;
 	line-height: 1.3;
 	border-radius: 3px;
-	border: 1px solid rgba(90,191,89,1); /* default BORDER color */
+	border: 1px solid #008cba; /* default BORDER color */
 	font-weight: normal; /* undo jqui's ui-widget-header bold */
 }
 
 .fc-event,
 .fc-event-dot {
-	background-color: rgba(90,191,89,1); /* default BACKGROUND color */
+	background-color: #008cba; /* default BACKGROUND color */
 }
 
 /* overpower some of bootstrap's and jqui's styles on <a> tags */
@@ -885,6 +886,8 @@ a.fc-more:hover {
 
 .fc-toolbar h2 {
 	margin: 0;
+	font-size: 30px !important;
+	font-weight: 200;
 }
 
 /* button layering (for border precedence) */
