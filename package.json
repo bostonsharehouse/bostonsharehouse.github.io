@@ -1,0 +1,19 @@
+{
+  "name": "bostonsharehouse.github.io",
+  "version": "0.0.0",
+  "description": "Simple webserver for Boston Share House webpage",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodejs app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Spaghet/bsharehousepage.git"
+  },
+  "author": "Rikuo Hasegawa",
+  "license": "GPL",
+  "bugs": {
+    "url": "https://github.com/Spaghet/bsharehousepage/issues"
+  }
+}
