@@ -1045,7 +1045,7 @@ hr {
     left: 0;
     top: auto;
     bottom: 0;
-    padding: 10px 10px;
+    padding: 5px 10px;
     height: 4.75em;
     background: #f73246;
     color: #ffffff;
@@ -1068,6 +1068,9 @@ hr {
     -o-transition: transform 0.35s, -o-transform 0.35s;
     transition: transform 0.35s, -webkit-transform 0.35s, -moz-transform 0.35s, -o-transform 0.35s;
     width: 100%;
+}
+#our-team .hovereffect h3 {
+    font-size: 20px;
 }
 
 #our-team .hovereffect:hover img {
@@ -1176,7 +1179,11 @@ hr {
 #our-team #tab-1 > div,
 #our-team #tab-2 > div,
 #our-team #tab-3 > div,
-#our-team #tab-4 > div {
+#our-team #tab-4 > div,
+#our-team #tab-5 > div,
+#our-team #tab-6 > div,
+#our-team #tab-7 > div,
+#our-team #tab-8 > div {
     margin-left: 0;
     margin-right: 0;
 }
@@ -2845,7 +2852,7 @@ footer ul > li > a:hover {
     /*counter end */
     /*Our team start */
     #our-team .hovereffect h3 {
-        font-size: 22px;
+        font-size: 25px;
     }
 
     #our-team .hovereffect p {

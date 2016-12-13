@@ -176,7 +176,11 @@ jQuery(function ($) {
         });
 
     //Our team resposive tabs
-    $('#responsiveTabsDemo').responsiveTabs({
+    $('#responsiveTabs1').responsiveTabs({
+        startCollapsed: 'tabs'
+        , animation: 'fade'
+    });
+    $('#responsiveTabs2').responsiveTabs({
         startCollapsed: 'tabs'
         , animation: 'fade'
     });
